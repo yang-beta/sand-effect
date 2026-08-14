@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sand Particle Animation</title>
-
-    <!-- CSS -->
+    <title>Sand Particle Export</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- 沙畫 Canvas -->
     <canvas id="CanvasAnime"></canvas>
+    <div id="exportStatus">準備輸出影片...</div>
 
-    <!--
-        ① 先載入錄影程式
-        recorder.js 會等待 sandAnimationReady 事件
-    -->
-    <script src="js/recorder.js"></script>
+    <!-- CCapture 必須先載入 -->
+    <script src="lib/CCapture.all.min.js"></script>
 
-    <!--
-        ② 再載入沙畫程式
-        canvas.js 完成圖片與粒子初始化後，
-        會發出 sandAnimationReady 事件
-    -->
+    <!-- 沙畫本體 -->
     <script src="js/canvas.js"></script>
 
+    <!-- 影片輸出 -->
+    <script src="js/export.js"></script>
 </body>
 </html>
