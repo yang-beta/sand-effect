@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -14,21 +17,28 @@
         rel="stylesheet"
         href="css/style.css"
     >
+
 </head>
+
 
 <body>
 
     <canvas id="CanvasAnime"></canvas>
 
-    <!--
-        GSAP 必須放在 canvas.js 前面
-        因為 canvas.js 內有使用 gsap.to()
-    -->
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    ></script>
 
+    <!--
+        沙畫動畫
+    -->
     <script src="js/canvas.js"></script>
 
+
+    <!--
+        影片錄製
+        必須放在 canvas.js 後面
+    -->
+    <script src="js/recorder.js"></script>
+
+
 </body>
+
 </html>
