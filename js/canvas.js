@@ -50,7 +50,7 @@ const TARGET_MAX_HEIGHT_RATIO = 0.78;
 //
 // 你的半色調圖片本身已經很多點，
 // 我建議先用 2.5 ～ 3。
-const PARTICLE_GAP = 3;
+const PARTICLE_GAP = 2;
 
 
 // 背景漂浮粒子
