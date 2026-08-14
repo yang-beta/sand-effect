@@ -4,21 +4,46 @@
     box-sizing: border-box;
 }
 
+
 html,
 body {
+
     width: 100%;
     height: 100%;
+
+    overflow: hidden;
+
+    background: #000000;
+
 }
+
 
 body {
-    overflow: hidden;
-    background: #111111;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
 }
 
+
 #CanvasAnime {
-    position: fixed;
-    inset: 0;
+
     display: block;
+
+    /*
+        實際 Canvas 解析度由 JS 固定為
+        1920 × 1080
+
+        CSS 只負責縮放到目前瀏覽器畫面。
+    */
+
     width: 100vw;
     height: 100vh;
+
+    object-fit: contain;
+
+    background: #000000;
+
 }
