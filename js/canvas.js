@@ -12,12 +12,11 @@ window.addEventListener('resize', resizeCanvas);
 // ⚙️ 參數設定區
 // -------------------------------------------------------------
 const ALL_IMAGE_SOURCES = [
-    './pic/dog-l.png',
-    './pic/grandpa-l.png',
-    './pic/grandmom-l.png',
     './pic/lovers-l.png',
-    './pic/kid-l.png',
-    './pic/cat-l.png'
+    './pic/lovers-l.png',
+    './pic/lovers-l.png',
+    './pic/lovers-l.png',
+    './pic/lovers-l.png'
 ];
 
 const DUST_COUNT = 45;
