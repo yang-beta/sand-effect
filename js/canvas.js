@@ -9,8 +9,8 @@ const IMAGE_SOURCE = './pic/01.png';
 const IMAGE_DURATION = 10.5;
 const PARTICLE_GAP = 2;
 
-const TARGET_MAX_WIDTH = 620;
-const TARGET_MAX_HEIGHT_RATIO = 0.78;
+const TARGET_MAX_WIDTH = 820;
+const TARGET_MAX_HEIGHT_RATIO = 0.88;
 
 const MAIN_COLOR = {
     r: 255,
@@ -159,12 +159,12 @@ class SandParticle {
 
         const sizeSeed = Math.random();
 
-        if (sizeSeed < 0.82) {
-            this.size = random(0.32, 0.82);
-        } else if (sizeSeed < 0.97) {
-            this.size = random(0.82, 1.35);
+        if (sizeSeed < 0.75) {
+            this.size = random(0.65, 1.30);
+        } else if (sizeSeed < 0.94) {
+            this.size = random(1.30, 2.10);
         } else {
-            this.size = random(1.35, 2.0);
+            this.size = random(2.10, 3.20);
         }
 
         const darkness =
@@ -259,8 +259,8 @@ class SandParticle {
 
         this.baseGlowSize =
             this.isSoft
-                ? random(4, 10)
-                : random(0.3, 2.2);
+                ? random(5, 13)
+                : random(0.5, 3.0);
 
         this.glowSize =
             this.baseGlowSize;
