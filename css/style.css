@@ -11,15 +11,19 @@ body {
 }
 
 body {
-    background-color: #111111;
     overflow: hidden;
+    background: #111111;
 }
 
 #CanvasAnime {
-    display: block;
     position: fixed;
+
     inset: 0;
+
+    display: block;
+
     width: 100vw;
     height: 100vh;
+
     z-index: 1;
 }
