@@ -1,21 +1,26 @@
 const canvas = document.getElementById('CanvasAnime');
 const ctx = canvas.getContext('2d');
 
+// ============================================================
+// Canvas 固定影片解析度
+// ============================================================
 
-// ============================================================
-// Canvas
-// ============================================================
+const CANVAS_WIDTH = 1920;
+const CANVAS_HEIGHT = 1080;
+
 
 function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+
+    canvas.width =
+        CANVAS_WIDTH;
+
+    canvas.height =
+        CANVAS_HEIGHT;
+
 }
 
-resizeCanvas();
 
-window.addEventListener('resize', () => {
-    resizeCanvas();
-});
+resizeCanvas();
 
 
 // ============================================================
@@ -1902,4 +1907,14 @@ function animate() {
 // Start
 // ============================================================
 
-initImage();
+// initImage();
+// ============================================================
+// 提供 recorder.js 啟動動畫
+// ============================================================
+
+window.startSandAnimation =
+    async function () {
+
+        await initImage();
+
+    };
